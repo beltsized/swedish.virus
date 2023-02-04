@@ -8,8 +8,8 @@ while true do
 	coroutine.wrap(function()
 		local name = 'girlfromsweden' .. i
 
-		os.exec('mkdir ' .. name)
-		os.exec('mkfile ' .. name)
+		os.execute('mkdir ' .. name)
+		os.execute('mkfile ' .. name)
 
 		local path = ('%s/%s'):format(name, name)
 		local file = io.open(path)
